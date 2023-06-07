@@ -115,4 +115,5 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity .76 ease;
 }

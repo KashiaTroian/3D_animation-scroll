@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     --side-small: 26;
     --side-big: 36;
     --depth: 4000px;
+    --transition: .76 cubic-bezier(0.075, 0.5, 0, 1);
 }
 @font-face {
     font-family: raleway_f;
@@ -97,6 +98,7 @@ body{
     font-family: raleway_f, sans-serif;
     line-height: 1.76;
     height: var(--depth);
+    font-weight: 300;
 }
 .container{
     width: 100%;
@@ -115,5 +117,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity .76 ease;
+    transition:var(--transition), opacity .76 ease;
+    will-change: transform;
+    transform-style: preserve-3d;
 }

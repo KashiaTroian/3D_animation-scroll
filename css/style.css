@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     --gutter: 30px;
     --side-small: 26;
     --side-big: 36;
-    --depth: 3800px;
+    --depth: 4000px;
     --transition: .76 cubic-bezier(0.075, 0.5, 0, 1);
 }
 @font-face {
@@ -174,4 +174,15 @@ left: 16vw;
 .text-left > * {
     position: relative;
     right: 16vw;
+    }
+    .sound-btn{
+        position: fixed;
+        bottom: 5vh;
+        right: 5vw;
+        cursor: pointer;
+        width: 24px;
+        transition: .25s ease;
+    }
+    .sound-btn.paused {
+        opacity: 0.25;
     }
